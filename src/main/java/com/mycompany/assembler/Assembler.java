@@ -3,7 +3,6 @@ import java.io.*;
 
 /**
  *
- * Parser Exception handling
  */
 public class Assembler {
     static int romAddress = 0;
@@ -33,9 +32,6 @@ public class Assembler {
         while(parser.hasMoreCommands()){
             switch (parser.commandType()) {
                 case "A_COMMAND" -> {
-//                    if(!Character.isDigit(parser.symbol().charAt(0)) && !symbolTable.contains(parser.symbol())){
-//                        symbolTable.addEntry(parser.symbol(), romAddress);
-//                    }
                     romAddress++;
                     break;
                 }
